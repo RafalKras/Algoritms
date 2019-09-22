@@ -1,20 +1,8 @@
 package sorting;
 
-public class BubbleSortArray {
+ public class BubbleSortArray {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		int[] arr1 = new int[]{2,9,45,2000,-2,85,74,641,-999999999};
-		arr1 = bsort(arr1);
-		
-		for(int c: arr1) {
-			System.out.print( c +" ");
-		}
-		
-	}
-
-	public static int[] bsort(int[] a) {
+	public static int[] bsort(int[] a) {	// Bubble sort for integers
 		
 		for(int i=0; i < a.length-1; i++) {
 			int flag = 0;
@@ -32,5 +20,9 @@ public class BubbleSortArray {
 	}
 	
 	
+	public static String[] bsort(String[] str) { // Bubble sort for Strings
+		System.out.println("Function in Development.");
+		return str;
+	}
 	
 }
