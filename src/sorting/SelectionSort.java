@@ -10,7 +10,7 @@ public class SelectionSort {
 				if (arr[minx]<arr[j]) {
 					 minx = j;
 				}
-			
+			//lol
 			int tmp = arr[i];
 			arr[i]=arr[minx];
 			arr[minx]=tmp;
