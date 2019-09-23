@@ -15,6 +15,7 @@ public class App {
 			System.out.print( c +" ");
 		}
 		System.out.println();
+		
 		// use Bubble sort
 		System.out.println("Uses bubbleSort to sort array.");
 		int[] arr2 = new int[]{5,2,3,-9,-25,-6,0,0,4,8,12,20,26};
@@ -23,6 +24,17 @@ public class App {
 			System.out.print( c +" ");
 		}
 		System.out.println();
+		
+		// use Selection Sort
+		
+		System.out.println("Uses SelectionSort to sort array.");
+		int[] arr3 = new int[]{5,2,3,-9,-25,-6,0,0,4,8,12,20};
+		arr3 = SelectionSort.sSort(arr3);
+		for(int c: arr3) {
+		System.out.print( c +" ");
+		}
+		System.out.println();
+			
 	}
 
 }
