@@ -1,6 +1,6 @@
 package sorting;
 
-public class SelectionSort {
+public class SelectionSort {  // looks for minimum element in array and put it to start of array and so on
 
 	
 	public static int[] sSort(int[] arr) {
