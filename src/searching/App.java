@@ -7,7 +7,7 @@ public class App {
 		//Finding one element in array
 		//-----------------------------
 		
-		int[] arr = createArr(false, 50,10,50);
+		int[] arr = createArr(true, 50,10,50);
 		for(int a: arr) System.out.print(a+ " | ");
 		
 		
