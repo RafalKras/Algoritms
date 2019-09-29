@@ -22,7 +22,9 @@ public class App {
 		int []arr = new int[size];
 		if(u) {
 			Random generator = new Random();
-			for(int i = 0; i < size; i++)
+			arr[0] = generator.nextInt(max-min)+min;
+			if(size <= 1) return arr;
+			for(int i = 1; i < size; i++)
 			{
 				int t = generator.nextInt(max-min)+min;
 				boolean flag = false;
@@ -30,7 +32,7 @@ public class App {
 					if(arr[j] == t) flag = true;
 				}
 				if(flag) {
-					i++;
+					i--;
 				}else {
 					arr[i] = t;
 				}
