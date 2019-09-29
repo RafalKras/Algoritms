@@ -1,5 +1,7 @@
 package sorting;
 
+// O(0nlogn)
+
 public class QuickSort {
 
 	public static int[] qSort(int[] arr) { // method to declare low bound and upper bound of passed array;

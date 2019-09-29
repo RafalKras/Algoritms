@@ -1,5 +1,7 @@
 package sorting;
 
+// O(n^2)
+
  public class BubbleSortArray { // takes first element and comparing to the all elements and last one becomes the biggest and so on
 
 	public static int[] bsort(int[] a) {	// Bubble sort for integers

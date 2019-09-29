@@ -1,6 +1,6 @@
 package sorting;
 
-public class InsertionSort { //takes values from "right unsorted piece" at put at correct place in "left sorted piece"
+public class InsertionSort { //takes values from "right unsorted piece" and put at correct place in "left sorted piece"
 	
 	public static int[] iSort(int[] arr) { // Insertion sort for integers
 		
