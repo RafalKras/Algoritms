@@ -6,15 +6,16 @@ public class App {
 	public static void main(String[] args) {
 		//Finding one element in array
 		//-----------------------------
-		
+	/*	
 		int[] arr = createArr(true, 50,10,50);
 		for(int a: arr) System.out.print(a+ " | ");
 		
+		*/
 		
+		int[] arr2 = new int[] {0,5,2,99,65,47,85,-56,-15,47,23};
+		int goal = -56;
 		
-		
-		
-		
+		System.out.println("I fount it at index:  "+ BinarySearch.bs(arr2,goal));
 
 	}
 	
@@ -24,15 +25,20 @@ public class App {
 			Random generator = new Random();
 			arr[0] = generator.nextInt(max-min)+min;
 			if(size <= 1) return arr;
+			int t;
+			boolean flag;
+			
 			for(int i = 1; i < size; i++)
 			{
-				int t = generator.nextInt(max-min)+min;
-				boolean flag = false;
+				t = generator.nextInt(max-min)+min;
+				flag = false;
 				for(int j = i-1; j >= 0; j--) {
 					if(arr[j] == t) flag = true;
 				}
 				if(flag) {
-					i--;
+				System.out.print("lol");
+				// i--;
+				
 				}else {
 					arr[i] = t;
 				}
