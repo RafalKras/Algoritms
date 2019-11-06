@@ -42,6 +42,20 @@ public class App {
 		System.out.println("Czas sortowania to: " + time2 + " milisekund.");
 		System.out.println();
 		
+		// use Bubble sort for Strings
+		System.out.println("Uses bubbleSort to sort array.");
+		String[] arrstr = new String[]{"Jeden","Anna","ania","125osiem","polo wa","ania","anna"};
+		time1 = System.nanoTime();
+		arrstr = BubbleSortArray.bsort(arrstr);
+		time2 = System.nanoTime() - time1;
+		for(String s: arrstr) {
+			System.out.print( s +" ");
+		}
+		System.out.println();
+		System.out.println("Czas sortowania to: " + time2 + " milisekund.");
+		System.out.println();
+		
+		
 		// use Selection Sort
 		
 		System.out.println("Uses SelectionSort to sort array.");
